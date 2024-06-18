@@ -216,7 +216,7 @@ check_include_file(conio.h      HAVE_CONIO_H)
 check_include_file(sys/time.h   HAVE_SYS_TIME_H)
 check_include_file(time.h       HAVE_TIME_H)
 check_include_file(strings.h    HAVE_STRINGS_H)
-check_include_file(rpc/xdr.h    HAVE_RPC_XDR_H)
+check_symbol_exists(xdrstudio_create "rpc/xdr.h"    HAVE_RPC_XDR_H)
 check_include_file(regex.h      HAVE_REGEX_H)
 check_include_file_cxx(sstream  HAVE_SSTREAM)
 
